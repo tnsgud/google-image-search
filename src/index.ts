@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import qs from 'querystring';
-import { ImageSearchOption, QueryResult, QueryInput } from './type';
+import { Search, QueryInput } from './type';
 
-const search = async (options: ImageSearchOption): Promise<QueryResult> => {
+const search: Search = async (options) => {
   const { enginId, apiKey, keyword } = options;
   const baseUrl = 'https://www.googleapis.com/customsearch/v1?';
   const queryInput: QueryInput = {

@@ -203,3 +203,7 @@ interface ResultItem {
     readonly label_with_op: string;
   }[];
 }
+
+export type Search = {
+  (options: ImageSearchOption): Promise<QueryResult>;
+};
