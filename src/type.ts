@@ -1,5 +1,11 @@
 import { ParsedUrlQueryInput } from 'querystring';
 
+declare namespace NodeJS {
+	interface ProcessEnv {
+		API_key:string
+	}
+}
+
 export interface ImageSearchOption {
   enginId: string;
   apiKey: string;
