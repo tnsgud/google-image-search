@@ -2,7 +2,6 @@ import 'dotenv/config';
 import qs from 'querystring';
 import { Search, QueryInput } from './type';
 
-
 const search: Search = async (options) => {
   const { enginId, apiKey, keyword } = options;
   const baseUrl = 'https://www.googleapis.com/customsearch/v1?';
@@ -17,7 +16,6 @@ const search: Search = async (options) => {
 
   return response.json();
 };
-
 
 const test = async () => {
   const data = await search({
