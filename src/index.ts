@@ -19,8 +19,8 @@ const search: Search = async (options) => {
 
 const test = async () => {
   const data = await search({
-    enginId: process.env.ENGIN_ID,
-    apiKey: process.env.API_KEY,
+    enginId: process.env.ENGIN_ID ?? '',
+    apiKey: process.env.API_KEY ?? '',
     keyword: '아이유',
   });
 
